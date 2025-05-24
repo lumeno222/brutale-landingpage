@@ -2,8 +2,8 @@ import { motion } from 'framer-motion'
 
 export default function Home() {
   return (
-    <main className="bg-black text-white min-h-screen">
-      <section className="h-screen flex flex-col justify-center items-center text-center px-4">
+    <main className="min-h-screen">
+      <section className="h-screen flex flex-col justify-center items-center text-center px-4 bg-gradient-to-b from-black to-gray-900">
         <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} className="text-5xl font-bold">
           Das ultimative Paket für deinen Online-Auftritt
         </motion.h1>
@@ -15,7 +15,7 @@ export default function Home() {
         </motion.button>
       </section>
 
-      <section className="h-screen bg-white text-black flex flex-col justify-center items-center px-4">
+      <section className="h-screen flex flex-col justify-center items-center text-center bg-white text-black px-4">
         <h2 className="text-4xl font-bold">Was du bekommst</h2>
         <p className="mt-4 max-w-xl text-lg text-center">
           Von modernen Animationen über mobiloptimiertes Design bis hin zu einer Struktur, die verkauft.
