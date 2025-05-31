@@ -28,33 +28,37 @@ export default function Home() {
 
   return (
     <main>
-      <section className="hero h-screen bg-black text-white flex flex-col justify-center items-center">
-        <h1 className="hero-text text-6xl font-bold">Brutale Landingpage</h1>
-        <p className="mt-6 text-lg max-w-xl text-center text-gray-400">So wie Lusion – aber für dein Business.</p>
+      <section className="hero h-screen bg-black text-white flex flex-col justify-center items-center relative overflow-hidden">
+        <video autoPlay loop muted playsInline className="absolute w-full h-full object-cover z-0">
+          <source src="/video.mp4" type="video/mp4" />
+        </video>
+        <div className="relative z-10 text-center">
+          <h1 className="hero-text text-6xl font-bold">Visuelles Erlebnis</h1>
+          <p className="mt-6 text-lg max-w-xl mx-auto text-gray-300">Lusion-Stil, High-End Design, mobiloptimiert</p>
+        </div>
       </section>
 
       <section className="transition-section h-screen bg-white text-black flex items-center justify-center">
         <div className="text-center">
-          <h2 className="transition-text text-4xl font-bold">Smooth Scroll, krasser Look</h2>
-          <p className="mt-4 max-w-md mx-auto">Mit GSAP & Tailwind ins nächste Level.</p>
+          <h2 className="transition-text text-4xl font-bold">Dein Business, perfekt präsentiert</h2>
+          <p className="mt-4 max-w-md mx-auto">Maßgeschneiderte Inhalte mit wow-Effekt</p>
         </div>
       </section>
 
-      <section className="h-screen bg-cover bg-center relative flex items-center justify-center text-white"
-        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1557682224-5b8590cd9ec5?auto=format&fit=crop&w=1400&q=80')" }}>
-        <div className="bg-black bg-opacity-50 p-10 rounded-xl">
-          <h2 className="text-3xl font-bold">Video-Effekt Sektion</h2>
-          <p className="mt-2 max-w-md">Perfekt für deine Key-Messages & krasse Visuals.</p>
+      <section className="h-screen bg-gradient-to-r from-purple-800 to-indigo-900 flex items-center justify-center text-white text-center px-4">
+        <div>
+          <h2 className="text-4xl font-bold mb-4">Ultra starker Verkaufsfaktor</h2>
+          <p className="max-w-xl mx-auto">Alles aufgebaut auf Conversion – mit fließenden Übergängen, GSAP Animationen und responsivem Design.</p>
         </div>
       </section>
 
       <section className="h-screen bg-black text-white flex flex-col justify-center items-center text-center">
         <h2 className="text-3xl font-bold mb-6">Das bekommst du:</h2>
         <ul className="space-y-4 text-lg">
-          <li>✅ Lusion-Look mit GSAP ScrollTrigger</li>
-          <li>✅ Voll responsive und mobiloptimiert</li>
-          <li>✅ Animationen mit Wow-Faktor</li>
-          <li>✅ Sofort einsatzbereit</li>
+          <li>✅ Extrem starke visuelle Wirkung (wie Lusion)</li>
+          <li>✅ GSAP ScrollTrigger für Animationen</li>
+          <li>✅ Mobiloptimiert & schnell</li>
+          <li>✅ Bereit für dein Angebot</li>
         </ul>
       </section>
     </main>
