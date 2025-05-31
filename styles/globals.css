@@ -6,4 +6,5 @@ body {
   background-color: #000;
   color: #fff;
   font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
 }
